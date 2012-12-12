@@ -1,60 +1,15 @@
 {
-    "name": "illuminate/foundation",
-    "description": "A web application foundation.",
-    "keywords": ["framework", "laravel"],
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Taylor Otwell",
-            "email": "taylorotwell@gmail.com"
-        }
-    ],
-    "require": {
-        "php": ">=5.3.0",
-        "illuminate/auth": "1.2.*",
-        "illuminate/cache": "1.2.*",
-        "illuminate/config": "1.2.*",
-        "illuminate/console": "1.2.*",
-        "illuminate/container": "1.2.*",
-        "illuminate/cookie": "1.2.*",
-        "illuminate/database": "1.2.*",
-        "illuminate/encryption": "1.2.*",
-        "illuminate/events": "1.2.*",
-        "illuminate/exception": "1.2.*",
-        "illuminate/filesystem": "1.2.*",
-        "illuminate/http": "1.2.*",
-        "illuminate/log": "1.2.*",
-        "illuminate/mail": "1.2.*",
-        "illuminate/pagination": "1.2.*",
-        "illuminate/redis": "1.2.*",
-        "illuminate/routing": "1.2.*",
-        "illuminate/session": "1.2.*",
-        "illuminate/support": "1.2.*",
-        "illuminate/translation": "1.2.*",
-        "illuminate/validation": "1.2.*",
-        "illuminate/view": "1.2.*",
-        "symfony/browser-kit": "2.1.*",
-        "symfony/css-selector": "2.1.*",
-        "symfony/dom-crawler": "2.1.*",
-        "symfony/http-kernel": "2.1.*",
-        "symfony/process": "2.1.*",
-        "symfony/translation": "2.1.*"
-    },
-    "require-dev": {
-        "mockery/mockery": "0.7.2"
-    },
-    "autoload": {
-        "psr-0": {
-            "Illuminate\\Foundation": "src/"
-        },
-        "files": [
-            "src/helpers.php"
-        ]
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.2-dev"
-        }
-    },
-    "minimum-stability": "dev"
+	"require": {
+		"illuminate/foundation": "1.2.*",
+		"vendor/dropshop/dropshop": "*"
+	},
+	"autoload": {
+		"classmap": [
+			"app/controllers",
+			"app/models",
+			"app/database/migrations",
+			"app/tests/TestCase.php"
+		]
+	},
+	"minimum-stability": "dev"
 }
