@@ -13,7 +13,7 @@
 
 Route::get('/', function()
 {
-	echo 'hoi';
+	echo 'Test echo';
 	dropshop\Test::getTest();
 
 });
