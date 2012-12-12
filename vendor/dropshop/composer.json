@@ -1,0 +1,20 @@
+{
+    "name": "dropshop/dropshop",
+    "description": "Drag and Drop shop for Laravel",
+    "keywords": ["laravel", "shop"],
+    "authors": [
+        {
+            "name": "Nick Spelt",
+            "email": "nick@diejongens.com",
+            "homepage": "diejongens.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+     "autoload": {
+        "psr-0": {
+            "dropshop": "src/"
+        }
+    }
+}
