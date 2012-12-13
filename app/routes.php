@@ -13,7 +13,16 @@
 
 
 
-Route::get('test', 'HomeController@showWelcome');
+Route::get('/', 'CartController@showWelcome');
+
+
+
+/* Product routes */
+Route::post('cart/add', 'CartController@addProduct');
+Route::post('cart/edit', 'CartController@editProduct');
+Route::post('cart/remove', 'CartController@removeProduct');
+
+
 
 
 
@@ -27,9 +36,9 @@ Route::get('test', 'HomeController@showWelcome');
 |
 */
 
-Event::listen('addProduct', function($id, $amount)
+Event::listen('addProduct', function($amount, $title)
 {
-	echo 'Product added';
+	echo "$amount of $title added";
 });
 
 /*
