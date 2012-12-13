@@ -1,7 +1,6 @@
 {
 	"require": {
 		"illuminate/foundation": "1.2.*",
-		"vendor/dropshop/dropshop": "*" 
 	},
 	"autoload": {
 		"classmap": [
